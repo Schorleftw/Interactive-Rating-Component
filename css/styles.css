@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
+
+:root {
+    --paragraph-font-size: 15px;
+    --font-family: "Roboto", sans-serif;
+    --font-weight-normal: 400;
+    --font-weight-bold: 700;
+    --color-primary-orange: hsl(25, 97%, 53%);
+    --color-neutral-white: hsl(0, 0%, 100%);
+    --color-neutral-light-grey: hsl(217, 12%, 63%);
+    --color-neutral-medium-grey: hsl(216, 12%, 54%);
+    --color-neutral-dark-blue: hsl(213, 19%, 18%);
+    --color-neutral-very-dark-blue: hsl(216, 12%, 8%);
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 10px;
+    /* Changed the root font-size to 10px to make the
+    mental conversion of the font size easier when
+    using rem */
+}
+
+html, body {
+    height: 100vh;
+    /* Dont change width to 100vw when the default auto is better */
+    font-family: "Roboto", sans-serif;
+    background: var(--color-neutral-very-dark-blue);
+}
+
+.Rating-start {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 400px;
+    width: 400px;
+    border: 1px solid black;
+    border-radius: 25px;
+    padding: 30px;
+    background: var(--color-neutral-dark-blue);
+}
+
+h1 {
+    color: var(--color-neutral-white);
+}
+
+p {
+    color: var(--color-neutral-white);
+    font-size: var(--paragraph-font-size);
+}
+
+.star {
+    flex: 0.5;
+}
+
+.star .circle {
+    background-color: #2d3743;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    border: none;
+}
+
+.text {
+    flex: 1.5;
+}
+
+.rating {
+    flex: 1;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.button-div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.button-div > .button {
+    background-color: #2d3743;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    border: none;
+    color: var(--color-neutral-light-grey);
+    font-weight: var(--font-weight-bold)
+}
+
+.input {
+    display: flex;
+    justify-content: center;
+}
+
+.input > .button {
+    flex: 1;
+    border-radius: 25px;
+    height: 40px;
+    background: var(--color-primary-orange);
+    border: none;
+    color: var(--color-neutral-white);
+    font-size: var(--paragraph-font-size);
+    font-weight: var(--font-weight-bold);
+}
+
+.attribution { 
+    font-size: 11px; text-align: center; 
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%); 
+}
