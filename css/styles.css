@@ -173,7 +173,55 @@ form {
 }
 
 .bottom p {
-    font-weight: 900;
     font-weight: var(--color-neutral-light-grey);
     margin-bottom: 5px;
+}
+
+@media only screen and (max-width: 375px) {
+
+    /* Rating state start */
+
+    .Rating-start {
+        height: 325px;
+        width: 300px;
+        padding: 20px;
+    }
+
+    .button-div {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 15px;
+    }
+
+    .button-div > .button {
+        width: 40px;
+        height: 40px;
+    }
+
+    .input > .submit {
+        height: 35px;
+    }
+
+    /* Thank you state */
+
+    .thanks {
+        height: 325px;
+        width: 300px;
+        padding: 15px;
+        gap: 20px;
+    }
+    
+    .top > p {
+        padding: 5px 15px 5px 15px;
+    }
+
+    .bottom > p {
+        font-size: 1.2rem;
+    }
+
+    .top >img {
+        height: 90px;
+        width: 140px;
+    }
+    
 }
