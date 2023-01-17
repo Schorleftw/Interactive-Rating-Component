@@ -44,7 +44,6 @@ html, body {
     transform: translate(-50%, -50%);
     height: 370px;
     width: 400px;
-    border: 1px solid black;
     border-radius: 25px;
     padding: 30px;
     background: var(--color-neutral-dark-blue);
@@ -118,7 +117,7 @@ form {
     justify-content: center;
 }
 
-.input > .button {
+.input > .submit {
     flex: 1;
     border-radius: 25px;
     height: 40px;
@@ -129,14 +128,55 @@ form {
     font-weight: var(--font-weight-bold);
 }
 
-.input > .button:hover {
+.input > .submit:hover {
     background-color: var(--color-neutral-white);
     color: var(--color-primary-orange);
 }
 
 /* Thank you state */
 
+.thanks {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 370px;
+    width: 400px;
+    border: none;
+    border-radius: 25px;
+    padding: 30px;
+    background: var(--color-neutral-dark-blue);
+    gap: 20px;
+}
 
+.top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.top > p {
+    padding: 5px 15px 5px 15px;
+    border-radius: 25px;
+    color: var(--color-primary-orange);
+    background-color: #2d3743;
+    font-weight: var(--font-weight-bold);
+}
+
+.bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bottom p {
+    font-weight: 900;
+    font-weight: var(--color-neutral-light-grey);
+    margin-bottom: 5px;
+}
 
 /* .attribution { 
     font-size: 11px; text-align: center; 

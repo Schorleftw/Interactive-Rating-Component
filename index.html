@@ -26,7 +26,7 @@
         to help us improve our offering!</p>
     </div>
     <div class="rating">
-      <form>
+      <form id="form">
         <div class="button-div">
           <input class="button" type="button" value="1">
           <input class="button" type="button" value="2">
@@ -35,7 +35,7 @@
           <input class="button" type="button" value="5">
         </div>
         <div class="input">
-          <input class="button" type="submit" value="Submit">
+          <input id="submit" class="submit" type="submit" value="Submit">
         </div>
       </form>
     </div>
@@ -45,12 +45,18 @@
 
   <!-- Thank you state start -->
 
-  <!-- You selected Add rating here out of 5 -->
-
-  <!-- Thank you!
-
-  We appreciate you taking the time to give a rating. If you ever need more support, 
-  don’t hesitate to get in touch! -->
+  <div class="thanks">
+    <div class="top">
+      <img src="./images/illustration-thank-you.svg" alt="Thank you">
+      <p id="selected">You selected 4 out of 5</p>
+    </div>
+    <div class="bottom">
+      <h1>Thank you!</h1>
+      <p>We appreciate you taking the time to give a rating.</p>
+      <p>If you ever need more support, dont hesitate to</p>
+      <p>get in touch!</p>
+    </div>
+  </div>
 
   <!-- Thank you state end -->
 
@@ -59,5 +65,6 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Björn Wasserfuhr</a>.
   </div> -->
+  <script src="main.js"></script>
 </body>
 </html>
